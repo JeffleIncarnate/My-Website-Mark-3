@@ -1,0 +1,86 @@
+/* ---- MAIN ---- */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --white: #fff;
+  --black: #000000;
+  --accent: #106873;
+}
+
+/* ---- PARALLAX SCROLLING ---- */
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.one {
+  height: 50%;
+  background-image: url("../Images/Main/damon-lam-UBpM_NPeYTw-unsplash.jpg");
+}
+
+/* ---- HEADER ---- */
+header {
+  height: 100%;
+  width: auto;
+}
+
+header nav ul {
+  list-style: none;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav ul img {
+  max-width: 30em;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 3%;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 0.5rem;
+  transition: all 0.3s ease 0s;
+}
+
+header nav ul li a:hover {
+  color: var(--accent);
+}
+
+header nav ul li a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--accent);
+  transition: all 0.3s ease 0s;
+  width: 0;
+}
+
+header nav ul li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* ---- MAIN ---- */
