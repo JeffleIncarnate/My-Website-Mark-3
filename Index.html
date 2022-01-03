@@ -20,7 +20,7 @@
           <li><a href="#">Code</a></li>
           <li><a href="#">About Me</a></li>
           <a href="#"><img src="Images/Logos/Logo_Light-Text.png" alt="" /></a>
-          <li><a href="#">Quotes</a></li>
+          <li><a href="#quotes">Quotes</a></li>
           <li><a href="">Skills</a></li>
         </ul>
       </nav>
@@ -32,9 +32,106 @@
     <!-- 
       MAIN START
     -->
-    <main class="wrapper"></main>
+    <main class="wrapper">
+      <!--Carousel-->
+      <div class="slider" id="quotes">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <h2>"Brown Cows"</h2>
+          </div>
+          <div class="slide">
+            <h2>"WHAT YOU IMBECILE"</h2>
+          </div>
+          <div class="slide">
+            <h2>"Did he just speak DORA LANGUAGE AT ME?"</h2>
+          </div>
+          <div class="slide">
+            <h2>
+              ”I dunno what you’re talking about, i’m as fresh as ever, that's
+              why they call me Mr. Water”
+            </h2>
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+
+      <!--ABOUT ME-->
+      <div class="about_me">
+        <div class="about_me_text">
+          <h2>Time Line</h2>
+          <p>
+            Dhruv Rayat began his coding Journey in 2017 starting with Python.
+            He began by learning the basics: Varaibles, Loops, Conditional
+            Statements etc, he described it as "A great Introduction on how
+            Computers worked". He then quickly started to fall in love with
+            Code.
+          </p>
+          <br />
+          <p>
+            In late 2020 Dhruv began his Journey into Unity. He then went ahead
+            and started to learn the basics of C# the prefered Langauge for Game
+            Developers. After 3 months of learning he began work on
+            Timecore&copy;, a game where you can control time, and you have to
+            parcour up stages.
+          </p>
+          <br />
+          <p>
+            While Still learning C#(Unity) Dhruv decided to learn Vanilla C#,
+            starting with Variables, Loops, API's, etc. He then decided to start
+            texting his skills by creating an AI called Paige. Paige can tell
+            time, Open apps, Tell Jokes, Search the web; and even more! He
+            started development on this AI while working on Pogformer, and is
+            proud to say Paige's code is now a GIT Repo on his Github
+          </p>
+          <br />
+          <p>
+            After a quick break Dhruv started work on his second Game
+            Pogformer&copy;, this was a 2D Platfomer game where you had to
+            defeat enimies, jump over blocks and reach the floating green cube
+            to complete the level.
+          </p>
+          <br />
+          <p>
+            Once Dhruv's game development phase was over, he decided to rebrand
+            himself, he started as a Python Developer, and Finally he decided to
+            become a web Developer, he quickly started getting a hang of HTML,
+            CSS and JS, he then started to get a couple websites under his belt.
+          </p>
+        </div>
+
+        <div class="parallax two"></div>
+      </div>
+    </main>
     <!--
       MAIN END
     -->
+
+    <!--
+      SCRIPTS
+    -->
+    <script src="JS/Carousel.js"></script>
   </body>
 </html>
