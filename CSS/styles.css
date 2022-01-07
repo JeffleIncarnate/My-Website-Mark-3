@@ -68,6 +68,7 @@ nav {
   position: absolute;
   width: 100%;
   z-index: 100;
+  transition: all 0.3s ease 0s;
 }
 
 /* The navbar */
@@ -118,6 +119,11 @@ nav ul li {
   display: inline;
 }
 
+.active {
+  position: fixed;
+  background-color: var(--black-2);
+}
+
 /* -- HEADER -- */
 body {
   background: #fff;
@@ -143,6 +149,7 @@ h1 {
 }
 
 .concept {
+  z-index: 10;
   position: relative;
   padding: 5em;
   height: 100vh;
@@ -294,7 +301,7 @@ h1 {
 .slider {
   width: 40%;
   height: 400px;
-  border-radius: 10px;
+  border-radius: 0px;
   overflow: hidden;
   margin-left: 30%;
 }

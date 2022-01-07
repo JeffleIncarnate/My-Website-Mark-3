@@ -23,7 +23,7 @@
     -->
     <header>
       <div class="main-content">
-        <nav>
+        <nav class="navbar">
           <ul>
             <li><a href="#">Code</a></li>
             <li><a href="#">About Me</a></li>
@@ -275,6 +275,17 @@
       FOOTER END
     -->
 
+    <script src="JS/Navbar.js"></script>
     <script src="JS/Carousel.js"></script>
+    <script>
+      const cursor = document.querySelector(".cursor");
+
+      document.addEventListener("mousemove", (e) => {
+        cursor.setAttribute(
+          "style",
+          "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
+        );
+      });
+    </script>
   </body>
 </html>
