@@ -90,11 +90,32 @@ nav ul a {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  transition: all 0.3s ease 0s;
 }
 
 nav ul a:hover {
-  background-color: #ddd;
-  color: black;
+  color: var(--accent);
+}
+
+nav ul li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0px;
+  height: 2px;
+  background: var(--accent);
+  transition: all 0.3s;
+}
+
+nav ul li {
+  list-style: none;
+  position: relative;
+  display: inline;
 }
 
 /* -- HEADER -- */
