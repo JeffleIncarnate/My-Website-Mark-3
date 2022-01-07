@@ -56,69 +56,152 @@ if it's not present, don't show loader */
   background-size: auto;
 }
 
-.one {
-  height: 90%;
-  background-image: url("../Images/Main/damon-lam-UBpM_NPeYTw-unsplash.jpg");
-}
-
 .two {
   width: 50%;
-  height: 55rem;
+  height: 75rem;
   background-image: url("../Images/Main/ruvim-noga-pazM9TQJ2Ck-unsplash.jpg");
 }
 
 /* ---- HEADER ---- */
 /* -- NAV BAR -- */
-header {
-  height: 60%;
-  width: auto;
+nav {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
 }
 
-header nav ul {
-  list-style: none;
-  list-style-type: none;
+/* The navbar */
+nav ul {
+  overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-header nav ul img {
-  max-width: 30em;
+nav ul a img {
+  max-width: 20rem;
 }
 
-header nav ul li {
-  display: inline;
-  margin: 3%;
-}
-
-header nav ul li a {
-  color: #fff;
+/* Navbar links */
+nav ul a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
+}
+
+nav ul a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* -- HEADER -- */
+body {
+  background: #fff;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.main-content {
+  text-align: center;
+  text-transform: uppercase;
+  scroll-snap-type: y mandatory;
   position: relative;
-  padding-bottom: 0.5rem;
-  transition: all 0.3s ease 0s;
+  height: 80vh;
 }
 
-header nav ul li a:hover {
-  color: var(--accent);
+.hover {
+  cursor: pointer;
 }
 
-header nav ul li a:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
+h1 {
+  position: relative;
+  color: #fff;
+  text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.concept {
+  position: relative;
+  padding: 5em;
+  height: 100vh;
+  overflow: hidden;
+  scroll-snap-align: center;
+}
+
+.concept:before {
   content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
   position: absolute;
-  background: var(--accent);
-  transition: all 0.3s ease 0s;
-  width: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(rgba(0, 0, 0, 0.3), transparent);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-header nav ul li a:hover:after {
-  width: 100%;
+.concept:hover:before {
+  opacity: 0.5;
+}
+
+.concept-one {
+  display: grid;
+  grid: repeat(3, 1fr) / repeat(3, 1fr);
+  background: var(--black);
+  padding: 8em;
+}
+
+.concept-one h1 {
+  position: absolute;
+  margin: auto;
   left: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -30px;
+  transition: 0.5s ease;
+  z-index: 0;
+  letter-spacing: 25px;
+}
+
+.concept-one .hover {
+  z-index: 1;
+}
+
+.concept-one .hover-1:hover ~ h1 {
+  left: 30px;
+  margin-top: -10px;
+}
+
+.concept-one .hover-2:hover ~ h1 {
+  margin-top: -10px;
+}
+
+.concept-one .hover-3:hover ~ h1 {
+  right: 30px;
+  margin-top: -10px;
+}
+
+.concept-one .hover-4:hover ~ h1 {
+  left: 30px;
+}
+
+.concept-one .hover-6:hover ~ h1 {
+  right: 30px;
+}
+
+.concept-one .hover-7:hover ~ h1 {
+  left: 30px;
+  margin-top: -50px;
+}
+
+.concept-one .hover-8:hover ~ h1 {
+  margin-top: -50px;
+}
+
+.concept-one .hover-9:hover ~ h1 {
+  right: 30px;
+  margin-top: -50px;
 }
 
 /* -- Title -- */
@@ -155,6 +238,7 @@ header nav ul li a:hover:after {
   border-width: 3px;
   border-radius: 3rem;
   display: flex;
+  z-index: 10;
   justify-content: center;
 }
 
@@ -296,34 +380,82 @@ header nav ul li a:hover:after {
 
 /* -- ABOUT ME -- */
 .about_me {
-  margin-top: 25rem;
+  margin-top: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--black-2);
-  border-radius: 100px 0px 0px 100px;
-  box-shadow: 0px 1px 30px 0 rgb(255 255 255 / 3%),
-    0 1px 30px 0 rgb(255 255 255 /3%);
 }
 
-.about_me .about_me_text {
-  text-align: center;
-  width: 30%;
-  margin-left: 10%;
+.timeline {
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+  font-family: "Fira Sans", sans-serif;
+  color: #ffffff;
 }
 
-.about_me .about_me_text h2 {
-  font-size: 2rem;
-  margin: 1rem;
+.timeline__component {
+  margin: 0 20px 20px 20px;
 }
 
-.about_me .about_me_text p {
-  margin: 0.5rem;
+.timeline__component--bg {
+  padding: 1.5em;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: all 0.3s ease 0s;
+}
+
+.timeline__component--bg:hover {
+  background-color: var(--accent);
+}
+
+/* LEAVE TILL LAST */
+.timeline__component--bottom {
+  margin-bottom: 0;
+}
+
+.timeline__middle {
+  position: relative;
+  background: #ffffff;
+}
+
+.timeline__point {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+/* LEAVE TILL LAST */
+.timeline__point--bottom {
+  top: initial;
+  bottom: 0;
+}
+
+.timeline__date--right {
+  text-align: right;
+}
+
+.timeline__title {
+  margin: 0;
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+.timeline__paragraph {
+  line-height: 1.5;
 }
 
 /* -- GRID --  */
 #ongoing_projects {
-  margin-top: 10rem;
+  margin-top: 25rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: var(--black-2);
