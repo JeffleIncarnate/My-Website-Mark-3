@@ -339,7 +339,7 @@ h1 {
 }
 
 .manual-btn {
-  border: 2px solid var(--accent);
+  border: 2px solid var(--white);
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -416,7 +416,7 @@ h1 {
 
 .timeline {
   margin: 0 auto;
-  max-width: 750px;
+  max-width: 50%;
   padding: 25px;
   display: grid;
   grid-template-columns: 1fr 3px 1fr;
@@ -492,7 +492,7 @@ h1 {
     0 1px 30px 0 rgb(255 255 255 /3%);
 }
 .image-grid {
-  --gap: 16px;
+  --gap: 10px;
   --num-cols: 4;
   --row-height: 300px;
 
@@ -506,6 +506,7 @@ h1 {
 }
 
 .image-grid img {
+  border-radius: 10px;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -531,6 +532,7 @@ h1 {
 }
 
 .overlay {
+  border-radius: 10px;
   position: absolute;
   bottom: 0;
   left: 0;
