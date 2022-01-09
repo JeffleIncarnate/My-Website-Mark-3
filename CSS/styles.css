@@ -271,8 +271,8 @@ h1 {
 }
 
 .scroll {
-  width: 0.8rem;
-  height: 0.8rem;
+  width: 0.75rem;
+  height: 0.75rem;
   margin-top: 3px;
   margin-bottom: 3px;
   position: relative;
@@ -304,6 +304,7 @@ h1 {
   border-radius: 0px;
   overflow: hidden;
   margin-left: 30%;
+  margin-bottom: 10rem;
 }
 
 .slides {
