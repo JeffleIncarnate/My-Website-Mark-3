@@ -537,7 +537,7 @@ h1 {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(16, 104, 115, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   overflow: hidden;
   width: 0;
   height: 100%;
@@ -550,7 +550,7 @@ h1 {
 
 .text {
   color: var(--white);
-  font-size: 1.5rem;
+  font-size: 2rem;
   position: absolute;
   top: 50%;
   left: 50%;
