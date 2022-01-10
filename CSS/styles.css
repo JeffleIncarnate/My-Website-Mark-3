@@ -318,6 +318,7 @@ h1 {
 }
 
 .slide {
+  color: var(--accent);
   width: 20%;
   transition: 2s;
   display: flex;
