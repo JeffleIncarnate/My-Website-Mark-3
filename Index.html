@@ -34,8 +34,26 @@
             <li><a href="#quotes">Quotes</a></li>
             <li><a href="">Skills</a></li>
             <li><a href="#">Contact</a></li>
+
+            <!-- CTA -->
+            <div class="cta">
+              <i onclick="openNav()" class="fas fa-bars"></i>
+            </div>
           </ul>
         </nav>
+
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="#">Code</a>
+          <a href="#">About Me</a>
+          <a href="#">Ongoing Projects</a>
+          <a href="#">Quotes</a>
+          <a href="#">Skills</a>
+          <a href="#">Contact</a>
+        </div>
+
         <div class="concept concept-one">
           <div class="hover hover-1"></div>
           <div class="hover hover-2"></div>
@@ -64,7 +82,7 @@
     <!-- 
       MAIN START
     -->
-    <main class="wrapper">
+    <main class="c">
       <!--Ongoing Projects-->
       <div id="ongoing_projects">
         <div class="image-grid">
@@ -93,7 +111,7 @@
             <a href="">
               <img src="Images/Main/SmokeTrails.jpg" alt="SmokeTrails" />
               <div class="overlay">
-                <div class="text">Mario in OJC</div>
+                <div class="text">Paige (Voice Assistant)</div>
               </div>
             </a>
           </div>
@@ -220,14 +238,6 @@
             </h2>
           </div>
           <!--slide images end-->
-          <!--automatic navigation start-->
-          <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-          </div>
-          <!--automatic navigation end-->
         </div>
         <!--manual navigation start-->
         <div class="navigation-manual">
@@ -283,5 +293,14 @@
 
     <script src="JS/Navbar.js"></script>
     <script src="JS/Carousel.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100vw";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
   </body>
 </html>
