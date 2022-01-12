@@ -48,7 +48,7 @@
           >
           <a href="#">Code</a>
           <a href="#">About Me</a>
-          <a href="#">Ongoing Projects</a>
+          <a onclick="closeNav()" href="#ongoing_projects">Ongoing Projects</a>
           <a href="#">Quotes</a>
           <a href="#">Skills</a>
           <a href="#">Contact</a>
@@ -82,7 +82,7 @@
     <!-- 
       MAIN START
     -->
-    <main class="c">
+    <main class="wrapper">
       <!--Ongoing Projects-->
       <div id="ongoing_projects">
         <div class="image-grid">
@@ -148,10 +148,9 @@
           <div class="timeline__component timeline__component--bg">
             <h2 class="timeline__title">Python</h2>
             <p class="timeline__paragraph">
-              In late 2017, Dhruv had opened a IDE (Integrated Development
+              In late 2017, Dhruv had opened an IDE (Integrated Development
               Enviroment) for the first time, he then folowed a simple guide to
-              print "Hello World!" to the screen. Yes, the language was also
-              Python.
+              print "Hello World!" to the screen. (The language was also Python)
             </p>
           </div>
           <div class="timeline__component timeline__component--bg">
@@ -293,14 +292,6 @@
 
     <script src="JS/Navbar.js"></script>
     <script src="JS/Carousel.js"></script>
-    <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "100vw";
-      }
-
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-    </script>
+    <script src="JS/Mobile.js"></script>
   </body>
 </html>
