@@ -360,7 +360,6 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: var(--black-2);
-  border-radius: 0px 100px 100px 0px;
 }
 .image-grid {
   --gap: 16px;
