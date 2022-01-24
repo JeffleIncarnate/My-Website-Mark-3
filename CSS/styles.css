@@ -60,7 +60,7 @@ if it's not present, don't show loader */
 
 .two {
   width: 50%;
-  height: 1500px;
+  height: 130rem;
   background-image: url("../Images/Main/ruvim-noga-pazM9TQJ2Ck-unsplash.jpg");
 }
 
@@ -863,13 +863,17 @@ ul {
     width: 100%;
   }
 
+  .parallax {
+    background-attachment: scroll;
+  }
+
   .cd-container {
     max-width: 100%;
   }
 
   .two {
     width: 90%;
-    height: 50rem;
+    height: 60rem;
   }
 }
 
