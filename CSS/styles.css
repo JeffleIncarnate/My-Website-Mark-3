@@ -864,7 +864,7 @@ ul {
   }
 
   .parallax {
-    background-attachment: fixed !important;
+    background-attachment: scroll;
   }
 
   .cd-container {
